@@ -1,4 +1,4 @@
-package com.example.callbackfunction;
+package com.example.callbackfunction.wrapper;
 
 public interface NoParamCallback {
 

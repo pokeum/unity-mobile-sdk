@@ -7,7 +7,7 @@ namespace CallbackFunction
     {
         private readonly Action _callback;
     
-        public NoParamCallbackBridge(Action callback) : base("com.example.callbackfunction.NoParamCallback")
+        public NoParamCallbackBridge(Action callback) : base("com.example.callbackfunction.wrapper.NoParamCallback")
         {
             _callback = callback;
         }
@@ -20,7 +20,7 @@ namespace CallbackFunction
     {
         private readonly Action<string> _callback;
     
-        public StringParamCallbackBridge(Action<string> callback) : base("com.example.callbackfunction.StringParamCallback")
+        public StringParamCallbackBridge(Action<string> callback) : base("com.example.callbackfunction.wrapper.StringParamCallback")
         {
             _callback = callback;
         }

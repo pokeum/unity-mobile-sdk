@@ -10,8 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".kotlin.MainActivity"-->
         <activity
-            android:name=".MainActivity"
+            android:name=".java.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

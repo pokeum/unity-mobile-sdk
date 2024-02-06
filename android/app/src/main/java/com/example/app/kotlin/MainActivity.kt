@@ -1,4 +1,4 @@
-package com.example.app
+package com.example.app.kotlin
 
 import android.os.Bundle
 import android.util.Log

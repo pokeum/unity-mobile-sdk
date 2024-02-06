@@ -1,4 +1,4 @@
-package com.example.callbackfunction;
+package com.example.callbackfunction.wrapper;
 
 import com.example.callbackfunction.sdk.Plugin;
 

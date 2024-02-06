@@ -6,7 +6,7 @@ namespace CallbackFunction
     public class Plugin
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
-        private static AndroidJavaObject _javaObject = new AndroidJavaObject("com.example.callbackfunction.TestCallbackFunction");
+        private static AndroidJavaObject _javaObject = new AndroidJavaObject("com.example.callbackfunction.wrapper.TestCallbackFunction");
 #elif UNITY_IOS && !UNITY_EDITOR
 
 #endif
