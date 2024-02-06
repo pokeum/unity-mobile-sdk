@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD208F342B721AB40090DED0 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BD208F332B721AB40090DED0 /* TestClass.m */; };
 		BD2C23012B6E8C9F00630FBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2C23002B6E8C9F00630FBE /* main.m */; };
+		BDC26F942B720A4400FD6F90 /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC26F932B720A4400FD6F90 /* Plugin.m */; };
+		BDC26F9A2B721BBE00FD6F90 /* UnityBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC26F992B721BBE00FD6F90 /* UnityBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD208F322B721AB40090DED0 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		BD208F332B721AB40090DED0 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		BD2C22FD2B6E8C9F00630FBE /* ios */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ios; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2C23002B6E8C9F00630FBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDC26F922B720A4400FD6F90 /* Plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		BDC26F932B720A4400FD6F90 /* Plugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
+		BDC26F982B721BBE00FD6F90 /* UnityBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityBridge.h; sourceTree = "<group>"; };
+		BDC26F992B721BBE00FD6F90 /* UnityBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD208F312B721A9A0090DED0 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BD208F322B721AB40090DED0 /* TestClass.h */,
+				BD208F332B721AB40090DED0 /* TestClass.m */,
+				BDC26F982B721BBE00FD6F90 /* UnityBridge.h */,
+				BDC26F992B721BBE00FD6F90 /* UnityBridge.m */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		BD2C22F42B6E8C9E00630FBE = {
 			isa = PBXGroup;
 			children = (
@@ -57,17 +77,36 @@
 		BD2C22FF2B6E8C9F00630FBE /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				BD2C23072B6E8D0600630FBE /* CallbackFunction */,
+				BD208F312B721A9A0090DED0 /* test */,
+				BDC26F8F2B7209DC00FD6F90 /* callbackfunction */,
 				BD2C23002B6E8C9F00630FBE /* main.m */,
 			);
 			path = ios;
 			sourceTree = "<group>";
 		};
-		BD2C23072B6E8D0600630FBE /* CallbackFunction */ = {
+		BDC26F8F2B7209DC00FD6F90 /* callbackfunction */ = {
+			isa = PBXGroup;
+			children = (
+				BDC26F912B720A0D00FD6F90 /* wrapper */,
+				BDC26F902B7209FE00FD6F90 /* sdk */,
+			);
+			path = callbackfunction;
+			sourceTree = "<group>";
+		};
+		BDC26F902B7209FE00FD6F90 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				BDC26F922B720A4400FD6F90 /* Plugin.h */,
+				BDC26F932B720A4400FD6F90 /* Plugin.m */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		BDC26F912B720A0D00FD6F90 /* wrapper */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = CallbackFunction;
+			path = wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD208F342B721AB40090DED0 /* TestClass.m in Sources */,
+				BDC26F942B720A4400FD6F90 /* Plugin.m in Sources */,
+				BDC26F9A2B721BBE00FD6F90 /* UnityBridge.m in Sources */,
 				BD2C23012B6E8C9F00630FBE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
