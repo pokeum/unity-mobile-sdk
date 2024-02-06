@@ -28,10 +28,18 @@
 - _Kotlin_
   ```kotlin
   Plugin.TestFunc(
-    5000,                                                           // delayMillis
-    { Log.d(TAG, "TestFunc OnSuccess Called!") },                   // onSuccess
-    { Log.d(TAG, "TestFunc OnFailure Called! : ${it.message}") }    // onFailure
+    /* delayMillis  : */ 5000,
+    /* onSuccess    : */ { Log.d(TAG, "TestFunc OnSuccess Called!") },
+    /* onFailure    : */ { Log.d(TAG, "TestFunc OnFailure Called! : ${it.message}") }
   )
+  ```
+- _Java_
+  ```java
+  Plugin.TestFunc(
+    /* delayMillis  : */ 5000,
+    /* onSuccess    : */ () -> Log.d(TAG, "TestFunc OnSuccess Called!"),
+    /* onFailure    : */ result -> Log.d(TAG, "TestFunc OnFailure Called! : " + result.getMessage())
+  );
   ```
 
 ### iOS
